@@ -13,13 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Printing folder contents'
-        run: ls
-
       - uses: actions/checkout@v3
-
-      - name: 'after actions'
-        run: ls
+      - name: "Login to Docker hub"
+        run: docker login --username mosamy1 --password dckr_pat_w799gqTxbZUCbXcPn_de7_uG4c8
         
 
 
